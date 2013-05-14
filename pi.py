@@ -21,6 +21,7 @@ def voice():
   run a voice command
   """
   if request.method == 'POST':
+    print request.files
     return "this isn't done yet"
   return render_template('voice.jinja.html')
 

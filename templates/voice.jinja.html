@@ -1,6 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
 <title>Voice Capture</title>
 <p>Don&apos;t just stand there, say something!</p>
-<form action="/voice">
-  <input type="file" accept="audio/*;capture=microphone">
+
+<form action="/voice" method="POST" enctype="multipart/form-data">
+  <input type="file" accept="audio/*;capture=microphone" name="recording">
   <input type="submit" value="Done!">
 <form>
+</body>
+<html>
