@@ -21,7 +21,7 @@ if __name__ == '__main__':
         forecast['txt_forecast']['forecastday'][0]['fcttext'])
   elif action == 'current':
     current = wunderground.conditions('San Francisco', 'CA')['current_observation']
-    say("It is %.1f degrees Fairenheit. That's %.1f Celcius, Pete" % (current['temp_f'], current['temp_c']))
+    say("It is %.1f degrees Fairenheit. That's %.1f sell sea us, Pete" % (current['temp_f'], current['temp_c']))
   else:
     say("I don't know how to tell you about " + action)
 
