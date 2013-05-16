@@ -3,9 +3,10 @@ Wunderground API wrapper
 """
 
 import requests
-
+import os
+filename = os.path.join(os.path.dirname(__file__), 'wunderground.cfg')
 # read key from config file
-with open('wunderground.cfg') as f:
+with open(filename) as f:
   _KEY = f.readline()
 
 # the endpoint format for all weather features
